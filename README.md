@@ -1,4 +1,4 @@
-# RNN for text Generation 
+# RNN for Text Generation 
 Recurrent neural networks for text generation.
 This means that in addition to being used for predictive models, RNN can learn the sequences of a problems and then generate entirely plausible sequences for the problem domain.
 
