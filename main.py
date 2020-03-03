@@ -5,8 +5,9 @@ from keras.layers import Dropout
 from keras.layers import LSTM
 from keras.callbacks import ModelCheckpoint
 from keras.utils import np_utils
-# from nltk.corpus import stopwords
 
+
+#loading text Input
 raw_text = open("wonderland.txt", 'r', encoding='utf-8').read()
 raw_text = raw_text.lower()
 
@@ -16,12 +17,8 @@ chars_to_int = dict((c, i) for i, c in enumerate(chars))
 
 # print(chars, chars_to_int)
 
-
 n_chars = len(raw_text)
 n_vocab = len(chars)
-
-# print(n_chars)
-# print(n_vocab)
 
 # preparing the dataset of input to output pairs
 seq_length = 100
@@ -65,6 +62,7 @@ checkpoint = ModelCheckpoint(filepath, monitor='loss', verbose=1, save_best_only
 callbacks_list = [checkpoint]
 
 model.fit(X, y, epochs=50, batch_size=128, callbacks=callbacks_list)
+
 
 
 
