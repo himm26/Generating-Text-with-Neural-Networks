@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/RNN_textGeneratoin.iml" filepath="$PROJECT_DIR$/.idea/RNN_textGeneratoin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RNN_TextGeneration.iml" filepath="$PROJECT_DIR$/.idea/RNN_TextGeneration.iml" />
     </modules>
   </component>
 </project>
